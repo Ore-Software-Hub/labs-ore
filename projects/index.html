@@ -11,10 +11,67 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./../assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
   </head>
   <body>
     <div id="header"></div>
-    <main class="flex flex-col gap-2 py-15 px-50 text-white"></main>
+    <main class="flex flex-col gap-2 py-15 px-50 text-white">
+      <section>
+        <p class="title">Projetos em Destaque</p>
+        <p class="subtitle">
+          Uma demonstração da nossa expertise em desenvolvimento de software
+          moderno.
+        </p>
+        <div class="projects">
+          <div class="card">
+            <img src="./assets/images/zeromath.png" alt="" />
+            <div class="listing">
+              <span class="tag">Mobile</span>
+              <a href="./zeromath/" target="_blank" rel="noreferrer">
+                <i class="ph ph-arrow-square-in"></i>
+              </a>
+            </div>
+            <p class="title">Zeromath</p>
+            <p class="subtitle">
+              O ZeroMath é um aplicativo para ensino de métodos numéricos em
+              cálculo, com gráficos interativos e soluções passo a passo.
+            </p>
+            <div class="listing2">
+              <span class="tag">Flutter</span>
+              <span class="tag">Aplicativo Móvel</span>
+              <span class="tag">Matemática</span>
+              <span class="tag">Android</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/md_editor.png" alt="" />
+            <div class="listing">
+              <span class="tag">Flutter package</span>
+              <a
+                href="https://pub.dev/packages/md_editor"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="ph ph-arrow-square-in"></i>
+              </a>
+            </div>
+            <p class="title">Markdown Editor</p>
+            <p class="subtitle">
+              Um editor de texto Markdown simples e personalizável para Flutter.
+            </p>
+            <div class="listing2">
+              <span class="tag">Flutter</span>
+              <span class="tag">Pacote</span>
+              <span class="tag">Markdown</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <div id="footer"></div>
     <script src="./../assets/js/index.js"></script>
   </body>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("./color.css");
 
 body {
@@ -6,9 +6,129 @@ body {
   background-color: var(--color-brilliant-black);
 }
 
+a {
+  transition: 0.7s;
+  color: var(--color-labs);
+}
+
+a:hover {
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 50px;
+  color: white;
+  align-items: center;
+  gap: 50px;
+
+  & .elements {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    & .lists {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+
+      & .title {
+        font-size: 1.5em;
+      }
+
+      & .subtitle {
+        color: var(--color-quick-silver);
+      }
+    }
+  }
+}
+
 .breadcrumbs {
   font-size: 2em;
   & span {
     font-family: var(--font-display);
+  }
+}
+
+section {
+  padding: 20px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  & .title {
+    font-size: 2em;
+  }
+
+  & .subtitle {
+    color: var(--color-quick-silver);
+  }
+
+  & .projects {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3px;
+  }
+
+  & .card {
+    border: 1px solid var(--color-quick-silver);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 500px;
+
+    & img {
+      min-height: 250px;
+      width: 500px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    & .tag {
+      border: 1px solid var(--color-quick-silver);
+      border-radius: 10px;
+      padding: 5px;
+      font-size: 0.7em;
+      transition: 0.3s;
+    }
+
+    & .tag:hover {
+      background-color: var(--color-labs);
+    }
+
+    & .listing {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    & .listing2 {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      width: 100%;
+    }
+
+    & .title {
+      font-size: 1.5em;
+    }
+
+    & .subtitle {
+      color: var(--color-quick-silver);
+    }
+  }
+
+  & .card:hover {
+    transform: scale(0.96);
   }
 }
