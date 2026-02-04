@@ -2,8 +2,15 @@ fetch("./../assets/modules/header.html")
   .then((res) => res.text())
   .then((html) => {
     document.getElementById("header").innerHTML = html;
-    const path =
+    let path =
       window.location.pathname.replace(/^\//, "").split("/")[0] || "início";
+    
+    switch(path){
+      case "projects":
+        path = "projetos";
+        break;
+    }
+    
     const breadRoute = document.getElementById("bread-route");
     if (breadRoute) {
       breadRoute.textContent = path.charAt(0).toUpperCase() + path.slice(1);

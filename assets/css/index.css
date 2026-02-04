@@ -71,8 +71,8 @@ section {
 
   & .projects {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 3px;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
   }
 
   & .card {
@@ -89,6 +89,13 @@ section {
     & img {
       min-height: 250px;
       width: 500px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    & iframe {
+      min-height: 250px;
+      width: 460px;
       object-fit: cover;
       margin-bottom: 10px;
     }
@@ -131,4 +138,19 @@ section {
   & .card:hover {
     transform: scale(0.96);
   }
+}
+
+
+.iframe-preview {
+  /* bloqueia cliques, scroll, foco, hover, teclado */
+  pointer-events: none;
+
+  /* remove bordas */
+  border: none;
+
+  /* impede scroll externo */
+  overflow: hidden;
+
+  /* hide scrollbar */
+  scrollbar-width: none;
 }
