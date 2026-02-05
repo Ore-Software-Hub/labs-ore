@@ -1,0 +1,8 @@
+
+# robots.txt for Ore Labs
+User-agent: *
+Allow: /
+
+# Absolute URL to your sitemap
+Sitemap: https://labs.oresoftware.net/sitemap.xml
+
